@@ -20,6 +20,7 @@
 		9412BEC517E0116600C2348E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9412BEC317E0116600C2348E /* MainStoryboard_iPad.storyboard */; };
 		9412BEC817E0116600C2348E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9412BEC717E0116600C2348E /* ViewController.m */; };
 		9412BECF17E011CB00C2348E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9412BECE17E011CB00C2348E /* CoreLocation.framework */; };
+		9412BF0717E01A6800C2348E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9412BF0617E01A6800C2348E /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		9412BEC617E0116600C2348E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9412BEC717E0116600C2348E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9412BECE17E011CB00C2348E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9412BF0617E01A6800C2348E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9412BF0717E01A6800C2348E /* MapKit.framework in Frameworks */,
 				9412BECF17E011CB00C2348E /* CoreLocation.framework in Frameworks */,
 				9412BEA917E0116600C2348E /* UIKit.framework in Frameworks */,
 				9412BEAB17E0116600C2348E /* Foundation.framework in Frameworks */,
@@ -61,7 +64,6 @@
 		9412BE9C17E0116600C2348E = {
 			isa = PBXGroup;
 			children = (
-				9412BECE17E011CB00C2348E /* CoreLocation.framework */,
 				9412BEAE17E0116600C2348E /* Where the Wild Things Are */,
 				9412BEA717E0116600C2348E /* Frameworks */,
 				9412BEA617E0116600C2348E /* Products */,
@@ -79,6 +81,8 @@
 		9412BEA717E0116600C2348E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9412BF0617E01A6800C2348E /* MapKit.framework */,
+				9412BECE17E011CB00C2348E /* CoreLocation.framework */,
 				9412BEA817E0116600C2348E /* UIKit.framework */,
 				9412BEAA17E0116600C2348E /* Foundation.framework */,
 				9412BEAC17E0116600C2348E /* CoreGraphics.framework */,
@@ -316,6 +320,7 @@
 				9412BECD17E0116600C2348E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-@interface ViewController : UIViewController <CLLocationManagerDelegate>
+@interface ViewController : UIViewController <MKMapViewDelegate>
 
-@property (nonatomic, strong) CLLocationManager *locationManager;
-@property (nonatomic, strong) CLLocation *location;
+@property (nonatomic, strong) IBOutlet MKMapView *mapView;
+@property (nonatomic,strong) MKUserLocation *userLocation;
 
--(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations;
+-(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation;
 
 @end

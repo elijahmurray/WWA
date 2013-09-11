@@ -13,24 +13,38 @@
 @end
 
 @implementation ViewController
+@synthesize mapView;
+@synthesize userLocation = _userLocation;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.locationManager = [[CLLocationManager alloc] init];
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    [self.locationManager startUpdatingLocation];
+    self.mapView.delegate = self;
+}
+
+-(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLoc {
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLoc.coordinate, 800, 800);
     
-    self.locationManager.delegate = self;
-    self.location = [[CLLocation alloc] init];
+    //set it globablly
+    _userLocation = userLoc;
+    
+    //focus map on local region
+    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
+    
+    //show pin
+    [self addAnnotation];
     
 }
 
--(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    self.location = locations.lastObject;
-    NSLog(@"%@", self.location.description);
+-(void)addAnnotation {
+    //add annotation
+    MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
+    point.coordinate = _userLocation.coordinate;
+    point.title = @"TITle";
+    point.subtitle = @"ha";
+    
+    [self.mapView addAnnotation:point];
 }
-
 
 - (void)didReceiveMemoryWarning
 {
