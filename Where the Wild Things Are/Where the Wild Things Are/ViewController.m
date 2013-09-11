@@ -17,8 +17,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [self.locationManager startUpdatingLocation];
+    
+    self.locationManager.delegate = self;
+    self.location = [[CLLocation alloc] init];
+    
 }
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    self.location = locations.lastObject;
+    NSLog(@"%@", self.location.description);
+}
+
 
 - (void)didReceiveMemoryWarning
 {
