@@ -1,8 +1,8 @@
 //
 //  main.m
-//  Where the Wild Things Are
+//  WWA
 //
-//  Created by Blue Fantail on 9/10/13.
+//  Created by Blue Fantail on 9/13/13.
 //  Copyright (c) 2013 Blue Fantail. All rights reserved.
 //
 
