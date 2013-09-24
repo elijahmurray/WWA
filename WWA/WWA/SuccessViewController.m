@@ -13,12 +13,9 @@
 @end
 
 @implementation SuccessViewController
-@synthesize imageView, secondString, image;
+@synthesize imageView, hairColorString, image, hairColor, ageGroup, ageGroupNumber;
 
-//-(UIImageView *)imageReview {
-//    if (_imageReview == nil) _imageReview = [[UIImageView alloc]init];
-//    return _imageReview;
-//}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -31,10 +28,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.foo.text = @"apple";
-    self.imageView.image = image;
-    self.foo.text = secondString;
-
+    
+    //passed in attributes from previous controller
+    
+    self.imageView.image = self.image;
+    self.hairColor.text = hairColorString;
+    self.ageGroup.text = [NSString stringWithFormat:@"%@",ageGroupNumber];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,4 +42,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)adjectiveButton:(id)sender {
+}
 @end

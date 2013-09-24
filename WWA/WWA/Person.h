@@ -12,7 +12,8 @@
 
 @property (nonatomic, strong) NSNumber *age;
 @property (nonatomic, strong) NSNumber *rating;
-@property (nonatomic, strong) NSString *ethnicity;
+@property (nonatomic, strong) NSString *hair;
 @property (nonatomic, strong) UIImage *picture;
+@property (nonatomic, strong) NSMutableArray *adjectives;
 
 @end

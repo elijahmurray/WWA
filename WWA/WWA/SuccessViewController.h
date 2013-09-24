@@ -11,8 +11,14 @@
 @interface SuccessViewController : UIViewController {
 }
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UILabel *foo;
-@property (weak,nonatomic) NSString *secondString;
 @property (weak, nonatomic) UIImage *image;
+
+@property (weak, nonatomic) IBOutlet UILabel *hairColor;
+@property (weak,nonatomic) NSString *hairColorString;
+
+@property (weak, nonatomic) NSNumber *ageGroupNumber;
+@property (weak, nonatomic) IBOutlet UILabel *ageGroup;
+
+- (IBAction)adjectiveButton:(UIButton *)sender;
 
 @end

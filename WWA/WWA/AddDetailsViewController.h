@@ -10,17 +10,15 @@
 
 @interface AddDetailsViewController : ViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UISegmentedControl *age;
-@property (weak, nonatomic) IBOutlet UISlider *rating;
-@property (weak, nonatomic) IBOutlet UIPickerView *ethnicity;
-
+@property (weak, nonatomic) IBOutlet UISegmentedControl *ageSegmentController;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
-
-@property (weak, nonatomic) IBOutlet UIPickerView *ethnicityPicker;
+@property (weak, nonatomic) IBOutlet UIPickerView *hairPicker;
 
 - (IBAction)savePerson:(UIButton *)sender;
-
 - (IBAction)takePhoto:(UIButton *)sender;
 - (IBAction)choosePhoto:(UIButton *)sender;
+- (IBAction)changeSegment:(UISegmentedControl *)sender;
+
+-(void)createParsePerson;
 
 @end

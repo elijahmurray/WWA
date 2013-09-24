@@ -25,6 +25,15 @@
 		94EA1D5817E91BF4003D5D64 /* AddDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EA1D5717E91BF4003D5D64 /* AddDetailsViewController.m */; };
 		94EA1D5B17E91C6C003D5D64 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EA1D5A17E91C6C003D5D64 /* Person.m */; };
 		94F188A617E63FE3003427E6 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F188A517E63FE3003427E6 /* Annotation.m */; };
+		94FB3BDE17F230AE002B5213 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FB3BDD17F230AE002B5213 /* Parse.framework */; };
+		94FB3BE117F23222002B5213 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FB3BDF17F23222002B5213 /* AudioToolbox.framework */; };
+		94FB3BE217F23222002B5213 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FB3BE017F23222002B5213 /* CFNetwork.framework */; };
+		94FB3BE917F23253002B5213 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FB3BE317F23253002B5213 /* libz.1.1.3.dylib */; };
+		94FB3BEA17F23253002B5213 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FB3BE417F23253002B5213 /* MobileCoreServices.framework */; };
+		94FB3BEB17F23253002B5213 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FB3BE517F23253002B5213 /* QuartzCore.framework */; };
+		94FB3BEC17F23253002B5213 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FB3BE617F23253002B5213 /* Security.framework */; };
+		94FB3BED17F23253002B5213 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FB3BE717F23253002B5213 /* StoreKit.framework */; };
+		94FB3BEE17F23253002B5213 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FB3BE817F23253002B5213 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +65,15 @@
 		94EA1D5A17E91C6C003D5D64 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		94F188A417E63FE3003427E6 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
 		94F188A517E63FE3003427E6 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		94FB3BDD17F230AE002B5213 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		94FB3BDF17F23222002B5213 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		94FB3BE017F23222002B5213 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		94FB3BE317F23253002B5213 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		94FB3BE417F23253002B5213 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		94FB3BE517F23253002B5213 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		94FB3BE617F23253002B5213 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		94FB3BE717F23253002B5213 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		94FB3BE817F23253002B5213 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +81,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94FB3BE917F23253002B5213 /* libz.1.1.3.dylib in Frameworks */,
+				94FB3BEA17F23253002B5213 /* MobileCoreServices.framework in Frameworks */,
+				94FB3BEB17F23253002B5213 /* QuartzCore.framework in Frameworks */,
+				94FB3BEC17F23253002B5213 /* Security.framework in Frameworks */,
+				94FB3BED17F23253002B5213 /* StoreKit.framework in Frameworks */,
+				94FB3BEE17F23253002B5213 /* SystemConfiguration.framework in Frameworks */,
+				94FB3BE117F23222002B5213 /* AudioToolbox.framework in Frameworks */,
+				94FB3BE217F23222002B5213 /* CFNetwork.framework in Frameworks */,
 				940F8F6F17E3C739002465EB /* MapKit.framework in Frameworks */,
 				940F8F6D17E3C734002465EB /* CoreLocation.framework in Frameworks */,
 				940F8F4A17E3C72B002465EB /* UIKit.framework in Frameworks */,
 				940F8F4C17E3C72B002465EB /* Foundation.framework in Frameworks */,
+				94FB3BDE17F230AE002B5213 /* Parse.framework in Frameworks */,
 				940F8F4E17E3C72B002465EB /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,8 +104,6 @@
 		940F8F3D17E3C72B002465EB = {
 			isa = PBXGroup;
 			children = (
-				940F8F6E17E3C739002465EB /* MapKit.framework */,
-				940F8F6C17E3C734002465EB /* CoreLocation.framework */,
 				940F8F4F17E3C72B002465EB /* WWA */,
 				940F8F4817E3C72B002465EB /* Frameworks */,
 				940F8F4717E3C72B002465EB /* Products */,
@@ -96,6 +121,17 @@
 		940F8F4817E3C72B002465EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				94FB3BE317F23253002B5213 /* libz.1.1.3.dylib */,
+				94FB3BE417F23253002B5213 /* MobileCoreServices.framework */,
+				94FB3BE517F23253002B5213 /* QuartzCore.framework */,
+				94FB3BE617F23253002B5213 /* Security.framework */,
+				94FB3BE717F23253002B5213 /* StoreKit.framework */,
+				94FB3BE817F23253002B5213 /* SystemConfiguration.framework */,
+				94FB3BDF17F23222002B5213 /* AudioToolbox.framework */,
+				94FB3BE017F23222002B5213 /* CFNetwork.framework */,
+				94FB3BDD17F230AE002B5213 /* Parse.framework */,
+				940F8F6E17E3C739002465EB /* MapKit.framework */,
+				940F8F6C17E3C734002465EB /* CoreLocation.framework */,
 				940F8F4917E3C72B002465EB /* UIKit.framework */,
 				940F8F4B17E3C72B002465EB /* Foundation.framework */,
 				940F8F4D17E3C72B002465EB /* CoreGraphics.framework */,
@@ -117,6 +153,7 @@
 				94F188A517E63FE3003427E6 /* Annotation.m */,
 				94EA1D5617E91BF4003D5D64 /* AddDetailsViewController.h */,
 				94EA1D5717E91BF4003D5D64 /* AddDetailsViewController.m */,
+				94C3F55C17F22E6600B4D8F4 /* Store */,
 				94EA1D5917E91C6C003D5D64 /* Person.h */,
 				94EA1D5A17E91C6C003D5D64 /* Person.m */,
 				9438361B17EBAE0300A0F2E0 /* SuccessViewController.h */,
@@ -138,6 +175,13 @@
 				940F8F5F17E3C72B002465EB /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94C3F55C17F22E6600B4D8F4 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +342,10 @@
 		940F8F6A17E3C72B002465EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/bluefantail/Development/Mobile\\ Development/WWA/WWA",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWA/WWA-Prefix.pch";
 				INFOPLIST_FILE = "WWA/WWA-Info.plist";
@@ -309,6 +357,10 @@
 		940F8F6B17E3C72B002465EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/bluefantail/Development/Mobile\\ Development/WWA/WWA",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWA/WWA-Prefix.pch";
 				INFOPLIST_FILE = "WWA/WWA-Info.plist";

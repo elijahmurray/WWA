@@ -10,14 +10,4 @@
 
 @implementation Person
 
-@synthesize picture = _picture;
-
--(UIImage *)picture {
-    if (_picture == nil) {
-        _picture = [[UIImage alloc] init];
-        
-    }
-    return _picture;
-}
-
 @end
